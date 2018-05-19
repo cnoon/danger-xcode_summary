@@ -127,8 +127,6 @@ module Danger
       end
     end
 
-    private
-
     def format_summary(xcode_summary)
       messages(xcode_summary).each { |s| message(s, sticky: sticky_summary) }
       warnings(xcode_summary).each do |result|
